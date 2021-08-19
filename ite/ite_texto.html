@@ -35,12 +35,22 @@
 <body style="margin: 0px; overflow: hidden;">
 
     <div class="arjs-loader">
-        <div>Loading, please wait...</div>
+        <div>Loading, please wait x...</div>
     </div>
-    <a-scene>
+    <a-scene
+    vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    >
       <a-sky color="lightblue"></a-sky>
-      <a-text value="ABCあいうえお日本語" font="custom-msdf.json" font-image="custom-msdf.png" negate="false" scale="2 2 1" position="-2 2 -4"></a-text>
-    </a-scene>
+      <a-text value="ABCあいうえお日本語" 
+      font="custom-msdf.json" 
+      font-image="custom-msdf.png"
+    negate="false" scale="2 2 1"
+    position="-2 2 -4"></a-text>
+    <a-entity camera></a-entity>  
+  </a-scene>
 </body>
 
 </html>
