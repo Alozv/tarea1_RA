@@ -62,7 +62,15 @@
         </a-assets>
 
         <a-marker preset='custom' type='pattern' url='./marker/pattern-marker.patt'>
-            
+            <a-video
+                src="#vid"
+                position='50 150 -100'
+                rotation='90 0 180'
+                width='300'
+                height='175'
+                play-on-click
+                >
+            </a-video>
         </a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>
