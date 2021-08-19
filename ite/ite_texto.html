@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Tracking Example</title>
+    <title> Seguimiento de imagen con texto</title>
 
     <script src='./lib/aframe-master.min.js'></script>
+    <script src="./lib/aframe-look-at-component.min.js"></script>
     <script src='./lib/aframe-ar-nft.js'></script>
 
     <style>
@@ -44,19 +45,20 @@
       
       <a-nft
         type="nft"        
-        url="https://alozv.github.io/cursito_ar/ite/collage/collage"
+        url="https://alozv.github.io/tarea1_RA/ite/collage/collage"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-      <a-text
+        
+        <a-text
         value="Aquí esta el mensaje D:"
-        look-at="[gps-camera]"
         scale="120 120 120"
         position="135 90 90"
         color="#6B00C0"
-    ></a-text>
+        ></a-text>
+
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
