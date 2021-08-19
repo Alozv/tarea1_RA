@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Seguimiento de imagen con texto</title>
@@ -10,57 +11,43 @@
     <script src='./lib/aframe-ar-nft.js'></script>
 
     <style>
-      .arjs-loader {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .arjs-loader {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .arjs-loader div {
-        text-align: center;
-        font-size: 1.25em;
-        color: white;
-      }
+        .arjs-loader div {
+            text-align: center;
+            font-size: 1.25em;
+            color: white;
+        }
     </style>
-  </head>
+</head>
 
-  <body style="margin: 0px; overflow: hidden;">
-    
+<body style="margin: 0px; overflow: hidden;">
+
     <div class="arjs-loader">
-      <div>Loading, please wait...</div>
+        <div>Loading, please wait...</div>
     </div>
-    <a-scene
-      vr-mode-ui="enabled: false;"
-      renderer="logarithmicDepthBuffer: true;"
-      embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-    >
-      
-      <a-nft
-        type="nft"        
-        url="https://alozv.github.io/tarea1_RA/ite/collage/collage"
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5"
-      >
-        
-        <a-text
-        value="Aquí esta el mensaje D:"
-        scale="120 120 120"
-        position="135 90 90"
-        color="#6B00C0"
-        ></a-text>
+    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
-      </a-nft>
-      <a-entity camera></a-entity>
+        <a-nft type="nft" url="https://alozv.github.io/tarea1_RA/ite/collage/collage" smooth="true" smoothCount="10"
+            smoothTolerance=".01" smoothThreshold="5">
+
+            <a-entity position="1 0 0" scale="3 3 3" text="value: Aquí está el mensaje D:;color:black"></a-entity>
+
+        </a-nft>
+        <a-entity camera></a-entity>
     </a-scene>
-  </body>
+</body>
+
 </html>
