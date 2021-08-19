@@ -35,19 +35,19 @@
 <body style="margin: 0px; overflow: hidden;">
 
     <div class="arjs-loader">
-        <div>Loading, please wait x...</div>
+        <div>Loading, please wait...</div>
     </div>
-    <a-scene
-    vr-mode-ui="enabled: false;"
-      renderer="logarithmicDepthBuffer: true;"
-      embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-    >
-      <a-text value="ABCあいうえお日本語" 
-       scale="2 2 1" 
-    position="-2 2 -4"></a-text>
-    <a-entity camera></a-entity>  
-  </a-scene>
+    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+        <a-nft type="nft" url="https://alozv.github.io/tarea1_RA/ite/collage/collage" smooth="true" smoothCount="10"
+            smoothTolerance=".01" smoothThreshold="5">
+
+                <a-text  value = "¡Hola, mundo!" position="1 0 0" width="" color="white"></a-text>
+
+        </a-nft>
+        <a-entity camera></a-entity>
+    </a-scene>
 </body>
 
 </html>
