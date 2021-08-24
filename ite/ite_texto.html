@@ -49,19 +49,30 @@
         smoothTolerance=".01"
         smoothThreshold="5"
       >
-      <a-entity
-          scale="1 1 1"
-          position="0 0 0"
-          rotation="-90 0 0"  
-        >
-        <a-text
-          value="Aquó tooooy!!"
-          position="0 0 0"
-          geometry="primitive:plane"
-        ></a-text>
-      </a-entity>
+        <a-entity scale="1 1 1" position="0 0 0" rotation="-90 0 0">
+          <a-text value="Now Interactable" geometry="primitive: plane">
+          </a-text>
+        </a-entity>
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
+
+<!--<a-scene>
+  <a-assets>
+    <video
+      id="penguin-sledding"
+      autoplay
+      loop="true"
+      src="penguin-sledding.mp4"
+    ></video>
+  </a-assets>
+
+  <--Usando el sistema de gestión de activos.--
+  <a-video src="# penguin-sledding" width="16" height="9" position="0 0-20">
+  </a-video>
+
+  <-- Definición de la URL en línea. No recomendado pero más cómodo para desarrolladores web.--
+  <a-video src="airbending.mp4"> </a-video>
+</a-scene>-->
